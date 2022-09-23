@@ -1,0 +1,294 @@
+<!-- Christian Hart 001-68-3628 -->
+
+<html>
+  <head>
+    <title>Working with CSS</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <style>
+      Body {
+        font-family: "times new roman";
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        background: ivory;
+        color: red;
+      }
+      .heading {
+        text-decoration: underline;
+      }
+      p {
+        text-indent: 2cm;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: red;
+        margin-left: 2cm;
+      }
+
+      /* --- Exercise 2 --- */
+
+      #div01 {
+        color: ivory;
+        background-color: goldenrod;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+          0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 4px black;
+      }
+      #div01 p {
+        text-indent: 0;
+      }
+
+      /* --- Exercise 3 --- */
+
+      #div02 h1 {
+        color: red;
+        margin-left: 2cm;
+      }
+      #div02 h2 {
+        color: red;
+        margin-left: 4cm;
+      }
+      #div02 p {
+        color: darkred;
+        text-indent: 2cm;
+        margin-left: 6cm;
+      }
+
+      /* --- Exercise 4 --- */
+
+      #div04 {
+        background-color: darkslategray;
+        padding: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+          0 6px 20px 0 rgba(0, 0, 0, 0.5);
+      }
+      #div04 .artist {
+        font-family: Arial, sans-serif;
+        font-size: 14;
+        font-weight: bold;
+        color: moccasin;
+        margin-left: 0;
+      }
+      #div04 .song {
+        font-family: Arial, sans-serif;
+        font-size: 14;
+        color: khaki;
+        margin-left: 0;
+      }
+      #div04 .album {
+        font-family: Arial, sans-serif;
+        font-size: 12;
+        color: khaki;
+        margin-left: 0;
+      }
+      #div04 .year {
+        font-family: Arial, sans-serif;
+        font-size: 14;
+        font-weight: bold;
+        color: ivory;
+        margin-left: 0;
+      }
+      #div04 .background {
+        color: chocolate;
+        text-indent: 0;
+      }
+      #div04 .verse {
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 14;
+        font-weight: bold;
+        color: gold;
+        margin-left: 2cm;
+        margin-right: 2cm;
+        text-indent: 0;
+      }
+      #div04 .chorus {
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 14;
+        font-weight: bold italic;
+        color: gold;
+        margin-left: 4cm;
+        margin-right: 4cm;
+        text-indent: 0;
+      }
+      #div04 .note {
+        text-indent: 0;
+      }
+
+      /* --- Exercise 6 --- */
+
+      #div06 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: aliceblue;
+        background-color: #0039a6;
+        padding: 30px;
+        text-shadow: 2px 2px 4px black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+          0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        line-height: 30px;
+      }
+      #div06 p {
+        text-indent: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Classwork 2: Working with CSS</h1>
+    <h4>Christian Hart • 001-68-3628</h4>
+    <h2 class="heading">Exercise 1</h2>
+    <p style="text-indent: 2cm; color: darkred">
+      This paragraph has been formatted using the in-line style command.
+    </p>
+    <p>
+      This paragraph has not been formatted using the in-line style command.
+    </p>
+
+    <h2 class="heading">Exercise 2</h2>
+
+    <div class="example-div" id="div01">
+      <p>
+        The font-family property for the body tag is Times New Roman, but the
+        closing quotation marks have been left off.
+      </p>
+    </div>
+
+    <h2 class="heading">Exercise 3</h2>
+    <h3 class="heading">1) Internal Inline Styles</h3>
+    <div>
+      <h1 style="color: red; margin-left: 2cm">h1 heading</h1>
+      <h2 style="color: red; margin-left: 4cm">h2 subheading</h2>
+      <p style="text-indent: 2cm; color: darkred; margin-left: 6cm">
+        Paragraph 1
+      </p>
+      <p style="text-indent: 2cm; color: darkred; margin-left: 6cm">
+        Paragraph 2
+      </p>
+      <h2 style="color: red; margin-left: 4cm">h2 subheading</h2>
+      <p style="text-indent: 2cm; color: darkred; margin-left: 6cm">
+        Paragraph 1
+      </p>
+    </div>
+    <h3 class="heading">2) Embedded Stylesheet</h3>
+    <div id="div02">
+      <h1>h1 heading</h1>
+      <h2>h2 subheading</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <h2>h2 subheading</h2>
+      <p>Paragraph 1</p>
+    </div>
+    <h3 class="heading">3) External Stylesheet</h3>
+    <div id="div03">
+      <h1>h1 heading</h1>
+      <h2>h2 subheading</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <h2>h2 subheading</h2>
+      <p>Paragraph 1</p>
+    </div>
+
+    <h2 class="heading">Exercise 4</h2>
+    <h3 class="heading">Embedded Stylesheet</h3>
+    <div id="div04">
+      <h1 class="artist">Artist: Steve Lacy</h1>
+
+      <h1 class="song">Song: Bad Habit</h1>
+
+      <h2 class="album">Album: Gemini Rights</h2>
+
+      <h2 class="year">Year: 2022</h2>
+
+      <p class="background">Background: Alternative R&B and Bedroom Pop</p>
+
+      <p class="verse">
+        Verse: I bite my tongue like a bad habit, <br />Kinda mad that I didn't
+        take a stab at it, <br />Tought you were too good for me, my dear,
+        <br />Never gave me time of day, my dear, <br />It's okay things happen
+        for <br />Reasons that I think are sure, yeah
+      </p>
+
+      <p class="chorus">Chorus: I wish I knew, I wish I knew you wanted me</p>
+      <br />
+      <p class="note">
+        Note: The text in this exercise was difficult to read against the
+        established ivory colored background, so I changed the background color
+        to slate grey for readability.
+      </p>
+    </div>
+
+    <h2 class="heading">Exercise 5</h2>
+    <h3 class="heading">External Stylesheet</h3>
+    <div id="div05">
+      <h1 class="artist">Artist: Steve Lacy</h1>
+
+      <h1 class="song">Song: Bad Habit</h1>
+
+      <h2 class="album">Album: Gemini Rights</h2>
+
+      <h2 class="year">Year: 2022</h2>
+
+      <p class="background">Background: Alternative R&B and Bedroom Pop</p>
+
+      <p class="verse">
+        Verse: I bite my tongue like a bad habit, <br />Kinda mad that I didn't
+        take a stab at it, <br />Tought you were too good for me, my dear,
+        <br />Never gave me time of day, my dear, <br />It's okay things happen
+        for <br />Reasons that I think are sure, yeah
+      </p>
+
+      <p class="chorus">Chorus: I wish I knew, I wish I knew you wanted me</p>
+      <br />
+      <p class="note">
+        Note: The text in this exercise was difficult to read against the
+        established ivory colored background, so I changed the background color
+        to slate grey for readability.
+      </p>
+    </div>
+
+    <h2 class="heading">Exercise 6</h2>
+    <div id="div06">
+      <p>
+        For this website to work, every department needs to be able to update
+        the content of their page without disrupting the design of the site.
+        Consistency is key here. Have an exernal CSS file that each department's
+        HTML page can link to is essential.
+      </p>
+      <p>
+        Each department can use several basic HTML tags to organize their page,
+        such as h1 through h6 and p, but it will also be useful to designate
+        certain elements with a class. For example class="heading" could be used
+        to group together all of the page heading information. The styling could
+        be decided on the external CSS file, and the content for each page could
+        be decided by each department, without changing the coherence of the
+        wesite.
+      </p>
+      <p>Some examples of tags and classes that could be used:</p>
+      <ul>
+        <li>h1 through h6 tags</li>
+        <li>p (paragraph) tag</li>
+        <li>article tag</li>
+        <li>body tag</li>
+        <li>table tag</li>
+        <li>a (hyperlink) tag</li>
+        <li>heading class</li>
+        <li>footer class</li>
+        <li>navigation-bar class</li>
+        <li>exam class</li>
+        <li>instructor class</li>
+      </ul>
+      <p>
+        In the CSS file we can edit various properties for a category of tag or
+        class and it will effect all exaples of that tag/class throughout the
+        whole site. Everything from text color, background-color, font-family,
+        box-shadow or the size of the various box model properties can be
+        managed from this one file and it will change all of the linked HTML
+        pages in the same way at the same time.
+      </p>
+    </div>
+    <br />
+  </body>
+</html>

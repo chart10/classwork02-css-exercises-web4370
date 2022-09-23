@@ -1,0 +1,77 @@
+/* Christian Hart 001-68-3628 */
+
+/* --- Exercise 3 --- */
+
+#div03 h1 {
+    color: red;
+    margin-left: 2cm;
+  }
+  #div03 h2 {
+    color: red;
+    margin-left: 4cm;
+  }
+  #div03 p {
+    color: darkred;
+    text-indent: 2cm;
+    margin-left: 6cm;
+  }
+
+/* --- Exercise 5 --- */
+
+#div05 {
+  background-color: darkslategray;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+          0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#div05 .artist {
+  font-family: Arial, sans-serif;
+  font-size: 14;
+  font-weight: bold;
+  color: moccasin;
+  margin-left: 0;
+}
+#div05 .song {
+  font-family: Arial, sans-serif;
+  font-size: 14;
+  color: khaki;
+  margin-left: 0;
+}
+#div05 .album {
+  font-family: Arial, sans-serif;
+  font-size: 12;
+  color: khaki;
+  margin-left: 0;
+}
+#div05 .year {
+  font-family: Arial, sans-serif;
+  font-size: 14;
+  font-weight: bold;
+  color: ivory;
+  margin-left: 0;
+}
+#div05 .background {
+  color: chocolate;
+  text-indent: 0;
+}
+#div05 .verse {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14;
+  font-weight: bold;
+  color: gold;
+  margin-left: 2cm;
+  margin-right: 2cm;
+  text-indent: 0;
+}
+#div05 .chorus {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14;
+  font-weight: bold italic;
+  color: gold;
+  margin-left: 4cm;
+  margin-right: 4cm;
+  text-indent: 0;
+}
+#div05 .note {
+  text-indent: 0;
+}
